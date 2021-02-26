@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Grade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1> Retrieve Your Grade</h1>
+
+    <form action ="http://mumstudents.org/params.php" methos="post">
+        <label for="student name">Name:</label><br>
+        <input type="text" id="Name:" name="Name" placeholder="Enter your name"><br>
+        <label for="Student ID:">Student ID:</label><br>
+        <input type="number" id="number" number="student ID" placeholder="Enter student ID"><br>
+
+        <label>
+            Assignment:
+            <select name="assignments">
+                <option value="assignment-1">Assignment 1</option>
+                <option value="assignment-2">Assignment 2</option>
+                <option value="assignment-3">Assignment 3</option>
+                <option value="assignment-4">Assignment 4</option>
+            </select>
+        </label><br>
+
+        <fieldset>
+            <legend>Entry Date</legend>
+            <label><input type="radio" namme="entry" value="Aug-2020"> August 2020</label>
+            <label><input type="radio" namme="entry" value="Nov-2020"> November 2020</label>
+            <label><input type="radio" namme="entry" value="Feb-2021"> February 2021</label>
+        </fieldset><br>
+
+        <label><input type="checkbox" name="confirm"> I confirm that I am looking up my own grade.</label><br>
+        <input type="submit" name="Get Grade!" value="Get Grade!"> <br><br>
+    </form>
+
+    
+</body>
+</html>
